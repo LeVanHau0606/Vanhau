@@ -9,6 +9,8 @@ import HomeBar from './component/HomeBar';
 import Login from './component/Login';
 import Cart from './component/Cart';
 import { CartProvider } from './CartProvider/CartContext';
+import Search from './component/Search';
+import Payment from './component/Payment';
 
 const Stack = createStackNavigator();
 
@@ -27,6 +29,9 @@ export default function App() {
           <Stack.Screen name="SingleProduct" component={Product_detial} options={{ headerTitle: 'Chi tiết sản phẩm' }} />
           <Stack.Screen name="Login" component={Login} />
           <Stack.Screen name="Cart" component={Cart} />
+          <Stack.Screen name="Search" component={Search} />
+          <Stack.Screen name="Payment" component={Payment} />
+
         </Stack.Navigator>
         <HomeBar/>
       </NavigationContainer>

@@ -81,7 +81,7 @@ const CartScreen = () => {
                 <Text style={styles.cartItemPrice}>Price: ${item.price.toFixed(2)}</Text>
               </View>
               <TouchableOpacity onPress={() => handleRemoveItem(item.id)}>
-                <Text style={styles.removeItemButton}>Remove</Text>
+                <Text style={styles.removeItemButton}>Xóa</Text>
               </TouchableOpacity>
             </View>
           )}
@@ -91,7 +91,7 @@ const CartScreen = () => {
         <Text style={styles.emptyCartText}>Your cart is empty.</Text>
       )}
       <Text style={styles.totalPrice}>Total Price: ${totalPrice.toFixed(2)}</Text>
-      <Button title="Checkout" onPress={handleCheckout} />
+      <Button title="Thanh toán" onPress={handleCheckout} />
     </View>
   );
 };
